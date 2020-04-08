@@ -1,0 +1,33 @@
+{
+	"pluginAlias": "LogicDataTableDesk",
+  "pluginType": "accessory",
+  "singular": true,
+	"schema": {
+		"type": "object",
+		"properties": {
+			"sittingHeight": {
+				"title": "Sitting height",
+        "type": "integer",
+        "minimum": 60,
+        "maximum": 120,
+				"required": true,
+				"default": 76
+			},
+			"standingHeight": {
+				"title": "Standing height",
+        "type": "integer",
+        "minimum": 60,
+        "maximum": 120,
+				"required": true,
+				"default": 115
+			},
+			"tableApiUrl": {
+				"title": "REST API exposed by table driver",
+				"type": "string",
+				"required": true,
+				"default": "http://127.0.0.1:32155",
+				"description": "You must first run the driver for the table. See <a href='https://github.com/MartinNuc/logic-data-controller' target='_blank'>logic data controller</a>"
+			}
+		}
+	}
+}
