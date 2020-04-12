@@ -1,11 +1,12 @@
 {
   "name": "homebridge-logic-data-table",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Homebridge plugin for adjusting height of table desk controller by LogicData motor.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "tsc && node dist/index.js",
+    "test": "jest",
     "prepublishOnly": "npm run build"
   },
   "files": [
@@ -30,8 +31,11 @@
     "axios": "0.19.2"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "@types/node": "13.11.1",
+    "jest": "^25.3.0",
     "prettier": "2.0.4",
+    "ts-jest": "^25.3.1",
     "typescript": "3.8.3"
   }
 }
